@@ -12,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>ToDO</h1>
+        <h1>ToDo</h1>
     </body>
 </html>
