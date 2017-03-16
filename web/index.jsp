@@ -25,8 +25,17 @@
 
         <!-- Angular-->
           <script src="vendors/angular/js/angular.min.js" type="text/javascript" xml:space="preserve"></script>
-         
-            
+          <script src="vendors/angular/js/angular-file-upload.js" type="text/javascript" xml:space="preserve"></script>
+          <script src="vendors/angular/js/angular-i18n/angular-locale_es-es.js" type="text/javascript" xml:space="preserve"></script>
+          <script src="vendors/angular/js/ng-currency.js" type="text/javascript" xml:space="preserve"></script>
+          <script src="vendors/bootstrap/js/ui-bootstrap-tpls-2.3.1.js" type="text/javascript" xml:space="preserve"></script>
+          <script src="vendors/angular/js/angular-cookies.js" type="text/javascript" xml:space="preserve"></script>
+          <script src="vendors/angular/js/dirPagination.js" type="text/javascript" xml:space="preserve"></script>
+         <!--Model-->
+          <!--Own code-->
+        <script src="js/app.js" type="text/javascript" xml:space="preserve"></script>
+        <script src="js/control/index.js" type="text/javascript" xml:space="preserve"></script>
+  
     </head>
     <body>
         <header id="header" class="asideClosed">
