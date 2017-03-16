@@ -1,6 +1,0 @@
-
-//Angular
-(function(){
- 
-
-})();
