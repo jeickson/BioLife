@@ -1,0 +1,54 @@
+<div ng-if="cookiesArray.length ==0">
+	<h1>There are no products in your shopping cart</h1>
+</div>
+<div ng-show="cookiesArray.length > 0">
+	<form name="cookieManagement" ng-submit="cookieManagement.$valid && ckCtrl.modifyAll()" novalidate>
+		<h1>Products in your shopping cart:</h1>
+		<div class="row">
+			<label>First Filed</label>
+			<input type="text" ng-model="firstFieldFilter" />
+			<label>Second Filed</label>
+			<input type="number" ng-model="secondFieldFilter" />
+			<label>Elements per page</label>
+			<input type="number" ng-model="pageSize" />
+		</div>
+		<table>
+			<tr><th>First Field</th><th>Second Field</th><th>Date</th><th>Option</th><th>Select</th><th>Checkbox 1</th><th>Checkbox 2</th><th>Modify</th><th>Remove</th></tr>
+			<tr dir-paginate="cookieObj in filteredData | itemsPerPage: pageSize" current-page="currentPage">
+			<!--<tr ng-repeat="cookieObj in cookiesArray">-->
+				<td>
+					<label ng-show="!editInput[$index]">{{cookieObj.getCookieFiled1()}}</label>
+					<label ng-show="editInput[$index]"><input type="text" ng-model="cookieObj.cookieFiled1" required/></label>
+				</td>
+				<td>{{cookieObj.getCookieFiled2() | currency}}</td>
+				<td>{{cookieObj.getDateToValidate() | date }}</td>
+				<td>{{cookieObj.getRadioType()}}</td>
+				<td>{{cookieObj.getSelectForm()}}</td>
+				<td>{{cookieObj.getCheckboxType1()}}</td>
+				<td>{{cookieObj.getCheckboxType2()}}</td>
+				<td>
+					<button type="button" id="modify{{$index}}" class="btn btn-info" ng-click="ckCtrl.modifyCookie($index)">
+								Modify
+					</button>
+				</td>
+				<td>
+					<button type="button" class="btn btn-danger" ng-click="ckCtrl.removeCookie($index)">
+								X
+					</button>
+				</td>
+			</tr>
+		</table>
+		<div class="text-left" boundary-links="true">
+  		<dir-pagination-controls boundary-links="true" template-url="../../view/templates/dir-pagination-controls.html" >
+			</dir-pagination-controls>
+		</div>
+		<button type="submit" class="btn btn-success">
+				Modify all cookies
+		</button>
+		<button type="button" class="btn btn-warning" ng-click="ckCtrl.unDo()">
+				Undo
+		</button>
+		<label>Total products: {{cookiesArray.length}} </label>
+		<label>Total price: {{totalPrice | currency}}</label>
+	</form>
+</div>
