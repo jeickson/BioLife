@@ -7,3 +7,34 @@ body{
     height: 100%;
     width: 100%;
 }
+header{
+    float: left;
+    height: 25%;
+    background-color: red;
+}
+aside{
+    color: white;
+    background-color: black;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+    float: right;
+    height: 100%;
+}
+img{
+    width: 80%;
+    height: 150px;
+    border-radius: 50%;
+}
+.opened{
+    width: 25%;
+}
+.closed{
+    width: 5%;
+}
+.asideOpened{
+    width: 75%;
+}
+.asideClosed{
+    width: 95%;
+}
