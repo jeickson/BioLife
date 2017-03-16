@@ -1,7 +1,14 @@
+<%-- 
+    Document   : index
+    Created on : 16-mar-2017, 19:58:54
+    Author     : alumne
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
-        <!--General-->
+         <!--General-->
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>BioLife</title>
 
@@ -26,13 +33,12 @@
           <script src="vendors/angular/js/dirPagination.js" type="text/javascript" xml:space="preserve"></script>
         <!--Model-->
 
-        <!--Own code-->
+        <!--Own code
         <script src="js/app.js" type="text/javascript" xml:space="preserve"></script>
         <script src="js/control/index.js" type="text/javascript" xml:space="preserve"></script>
-
+            -->
     </head>
     <body>
-        <h1>ToDo</h1>
-        <input type="text" class="form-control input-lg">
+        <h1>Hello World!</h1>
     </body>
 </html>
