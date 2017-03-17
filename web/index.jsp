@@ -38,16 +38,25 @@
   
     </head>
     <body>
+        <!--Header-->
         <header id="header" class="asideClosed">
-            <h2>HEADER</h2>
-            <input type="text" class="form-control" placeholder="SEARCH"/>
-            <nav>
-                <a>Article</a>
-            </nav>
-            <button class="btn btn-info" onclick="loginColumn()"><=</button>
+             <div class="container">
+                    <form class="searchbox">
+                        <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                        <input type="submit" class="searchbox-submit" value="GO">
+                        <span class="searchbox-icon">GO</span>
+                    </form>
+                </div>
+            <div id="iconsHeaderDiv">
+               
+                <button class="btn btn-info"  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
+            </div>
+
+       
+
         </header>
-        <aside id="logIn" class="closed">
-            
+        <!--Session-->
+        <aside id="logIn" class="closed">        
             <img src="img/login.png">
             <label>Username</label>
             <input class="form-control" type="text" required/>
