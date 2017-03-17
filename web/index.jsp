@@ -40,16 +40,21 @@
     <body>
         <!--Header-->
         <header id="header" class="asideClosed">
-             <div class="container">
-                    <form class="searchbox">
+            
+            <div id="iconsHeaderDiv" >
+                <div id="searchDiv" class="col-sm-9">
+                    <form  id="formSearch">
+                        <div class="searchbox">
                         <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                        </div>
                         <input type="submit" class="searchbox-submit" value="GO">
-                        <span class="searchbox-icon">GO</span>
+                        <span class="searchbox-icon"><span class="glyphicon glyphicon-search icon-size"></span>
                     </form>
+                    
                 </div>
-            <div id="iconsHeaderDiv">
-               
-                <button class="btn btn-info"  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
+                <div class="col-sm-3" id="loginBtnDiv">
+                    <button class="btn btn-info "  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
+                </div>
             </div>
 
        
