@@ -42,18 +42,18 @@
         <header id="header" class="asideClosed">
             
             <div id="iconsHeaderDiv" >
-                <div id="searchDiv" class="col-sm-9">
+                 <div class="col-sm-2" id="loginBtnDiv">
+                    <button class="btn btn-info "  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
+                </div>
+                <div id="searchDiv" class="col-sm-10">
                     <form  id="formSearch">
                         <div class="searchbox">
                         <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
                         </div>
-                        <input type="submit" class="searchbox-submit" value="GO">
+                        <input type="submit" class="searchbox-submit" value="Search">
                         <span class="searchbox-icon"><span class="glyphicon glyphicon-search icon-size"></span>
                     </form>
                     
-                </div>
-                <div class="col-sm-3" id="loginBtnDiv">
-                    <button class="btn btn-info "  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
                 </div>
             </div>
 
