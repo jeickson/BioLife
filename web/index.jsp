@@ -38,9 +38,12 @@
   
     </head>
     <body>
+        
         <!--Header-->
         <header id="header" class="asideClosed">
+           
             
+             <!----------------------------------------------------Icons header------------------------------------------------------->
             <div id="iconsHeaderDiv" >
                  <div class="col-sm-2" id="loginBtnDiv">
                     <button class="btn btn-info "  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
@@ -52,13 +55,31 @@
                         </div>
                         <input type="submit" class="searchbox-submit" value="Search">
                         <span class="searchbox-icon"><span class="glyphicon glyphicon-search icon-size"></span>
-                    </form>
-                    
+                    </form>              
                 </div>
+            </div>          
+             <!------------------------------------------------------------------------------------------------------------------------->
+             
+             <!----------------------------------------------------Menu------------------------------------------------------->
+            <div id="mainNavBarDiv">
+                <ul>
+                    <li id="homeLi"><a href="#home" id="homeIcon"><span class="glyphicon glyphicon-home icon-size"></a></li>
+                    <li class="dropdown">
+                      <a class="dropbtn">Articles</a>
+                      <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                      </div>
+                    </li>
+                   <li><a href="#news">Contact</a></li>  
+                </ul>
             </div>
-
-       
-
+             <!--------------------------------------------------------------------------------------------------------------->
+             <!-------------------------------------------------Background Header------------------------------------------------->
+          
+            <!-------------------------------------------------------------------------------------------------------------------->
+            
         </header>
         <!--Session-->
         <aside id="logIn" class="closed">        
