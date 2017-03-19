@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Lora|Patua+One|Prociono');
+@import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky');
 html{
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 body{
     height: 100%;
@@ -37,9 +38,10 @@ img{
 .asideClosed{
     width: 100%;
 }
-
-main{
-    height: 100%;
+#logo{
+    width: 20%;
+    height: 10%;
+    margin-left: 5%;
 }
 #iconsHeaderDiv{
     width: 30%;
@@ -51,9 +53,19 @@ main{
     width: 100%;
     height:100%;
     margin-left: 0px;
-    font-size: 200%;
-}
+    font-size: 1.5vw;
 
+}
+#titleDiv{
+    position: absolute;
+    top:0%;
+    left:35%;    ;
+    font-family: 'Fontdiner Swanky', cursive;   
+    width: 30%;
+    font-size: 5em;
+    
+    
+}
 
 #loginBtnDiv{
     height: 100%;
@@ -73,7 +85,7 @@ main{
 }
 .searchbox{
     position:relative;
-    min-width:10%;
+    min-width:0%;
     width:0%;
     height:100%;
     float:right;
@@ -120,7 +132,7 @@ main{
     position:absolute;
     top:0;
     font-family:verdana;
-    font-size:150%;
+    font-size:1.5vw;
     right:0;
     padding:0;
     margin:0;
@@ -158,7 +170,7 @@ ul {
 
 li {
     float: left;
-    height: 101.5%;
+    height: 100.5%;
     width: 6%;
    
 }
@@ -217,3 +229,49 @@ li.dropdown {
 
 /*Background Header*/
 
+/*Main*/
+main{
+    width: 100%;
+    height: 80%;
+    float: left;
+}
+section{
+    width: 100%;
+    height: 50%;
+    border: solid 4px white;
+    
+}
+main section +section {
+    border-top: none;
+}
+section button{
+    position: relative;
+    top: 45%;
+    width: 15%;
+    height: 15%;
+    opacity: 0.6;
+    z-index: 99;
+    font-size: 1vw !important;
+
+}
+section:hover button{
+    opacity: 1;
+
+}
+#sectionAnimals{
+    background-image: url("../img/animal3.jpg");
+    background-position: 0px 0%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 70%;
+
+    
+}
+
+#sectionPlants{
+    background-image: url("../img/header3.jpg");
+    background-position: 0px -80%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+     background-size: 100% 100%;
+}

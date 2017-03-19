@@ -46,7 +46,7 @@
              <!----------------------------------------------------Icons header------------------------------------------------------->
             <div id="iconsHeaderDiv" >
                  <div class="col-sm-2" id="loginBtnDiv">
-                    <button class="btn btn-info "  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
+                    <button class="btn btn-info"  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
                 </div>
                 <div id="searchDiv" class="col-sm-10">
                     <form  id="formSearch">
@@ -58,7 +58,7 @@
                     </form>              
                 </div>
             </div>          
-             <!------------------------------------------------------------------------------------------------------------------------->
+             <!-----------------------------------------------------END-------------------------------------------------------------------->
              
              <!----------------------------------------------------Menu------------------------------------------------------->
             <div id="mainNavBarDiv">
@@ -75,19 +75,31 @@
                    <li><a href="#news">Contact</a></li>  
                 </ul>
             </div>
-             <!--------------------------------------------------------------------------------------------------------------->
-             <!-------------------------------------------------Background Header------------------------------------------------->
-          
-            <!-------------------------------------------------------------------------------------------------------------------->
-            
+                        
+             <!----------------------------------------------------------END----------------------------------------------------->
+             <div id="titleDiv">BioLife<span><img src="img/logo5.gif" id="logo"><span></div>        
         </header>
-        <!--Session-->
+          <!--Sections-->
+        <main  class="asideClosed">
+            <a href=""><section id="sectionAnimals"class="text-center">
+                 <button class="btn btn-warning">Animals</button>
+                </section></a>
+            <a href=""><section id="sectionPlants" class="text-center">
+                 <button  class="btn btn-success">Plants</button>
+                </section></a>
+        </main>
+        
+          
+        <!--aside-->
         <aside id="logIn" class="closed">        
+            <!------------------------------------------------------------session------------------------------------------------------->
             <img src="img/login.png">
             <label>Username</label>
             <input class="form-control" type="text" required/>
             <label>Password</label>
             <input class="form-control" type="password" required/>
+            <!-------------------------------------------------------------END--------------------------------------------------------->
         </aside>
+      
     </body>
 </html>
