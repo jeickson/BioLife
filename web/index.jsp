@@ -53,9 +53,9 @@
                 <div id="searchDiv" class="col-sm-10">
                     <form  id="formSearch">
                         <div class="searchbox">
-                        <input type="search" placeholder="Search" name="search" class="form-control" onkeyup="buttonUp();" required>
+                        <input type="search" placeholder="Search" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
                         </div>
-                        <input type="submit" class="searchbox-submit" value="Search">
+                        <input type="submit" class="searchbox-submit" value="Send">
                         <span class="searchbox-icon"><span class="glyphicon glyphicon-search icon-size"></span>
                     </form>              
                 </div>
@@ -92,12 +92,15 @@
         </main>
         </div>
         
-        <div>
+
             <!--aside-->
             <aside id="logIn" class="closed">        
                 <!------------------------------------------------------------LOGIN VIEW------------------------------------------------------->
                 <h2>Login</h2>
-                <img src="img/login.png">
+                <div id="logoLoginDiv">
+                    <img src="img/login.png">   
+                </div>
+                
                 <span id="logInError"></span>
                 <label>Username</label>
                 <input class="form-control" type="text" required/>
@@ -106,6 +109,6 @@
                 <button class="btn btn-info">LOGIN</button>
                 <!-------------------------------------------------------------END--------------------------------------------------------->
             </aside>
-        </div>
+
     </body>
 </html>

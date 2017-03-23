@@ -5,7 +5,7 @@ html{
 }
 header{
     float: left;
-    height: 20%; 
+    height: 30%; 
     background-color: #f1f1f1;
     width: 100%;
 }
@@ -16,7 +16,9 @@ aside{
     top: 0px;
     float: right;
     width: 15%;
+    height: 100%;
 }
+
 .asideOpened{
     width: 85%;
 }
@@ -33,8 +35,8 @@ img{
     border-radius: 50%;
 }
 #logo{
-    width: 20%;
-    height: 10%;
+    width: 25%;
+    height: 15%;
     margin-left: 5%;
 }
 #iconsHeaderDiv{
@@ -55,7 +57,7 @@ img{
     left:35%;    ;
     font-family: 'Fontdiner Swanky', cursive;   
     width: 30%;
-    font-size: 5em;
+    font-size: 4.8vw;
     
     
 }
@@ -117,6 +119,12 @@ img{
     color: #d74b4b;
 }
 
+.searchbox-icon{
+    font-size:1.5vw;
+}
+.searchbox-submit{
+    font-size:1vw;
+}
 .searchbox-icon,
 .searchbox-submit{
     width:20%;
@@ -125,7 +133,6 @@ img{
     position:absolute;
     top:0;
     font-family:verdana;
-    font-size:1.5vw;
     right:0;
     padding:0;
     margin:0;
@@ -172,10 +179,10 @@ li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 22px 16px;
+    padding-top:20%;
     height: 100%;
     width: 100%;
-    font-size: 0.9vw;
+    font-size: 1vw;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -211,8 +218,8 @@ li.dropdown {
     display: block;
 }
 #homeIcon{
-   font-size:2vw;
-   padding-top: 10%;
+   font-size:3vw;
+   padding-top:5%;
    background-color: #5bc0de;
 }
 #homeIcon:hover{
@@ -225,7 +232,7 @@ li.dropdown {
 /*Main*/
 main{
     width: 100%;
-    height: 80%;
+    height: 70%;
     float: left;
 }
 section{
@@ -265,4 +272,8 @@ section:hover button{
     background-repeat: no-repeat;
     background-attachment:fixed;
      background-size: 100% 100%;
+}
+aside h2{
+    font-family: 'Fontdiner Swanky', cursive; 
+    text-align: center;
 }
