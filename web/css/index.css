@@ -9,15 +9,6 @@ header{
     background-color: #f1f1f1;
     width: 100%;
 }
-aside{
-    color: white;
-    background-color: black;
-    left: 0px;
-    top: 0px;
-    float: right;
-    width: 15%;
-    height: 100%;
-}
 
 .asideOpened{
     width: 85%;
@@ -29,11 +20,7 @@ aside{
     height: 100%;
     float: left;
 }
-img{
-    width: 80%;
-    height: 150px;
-    border-radius: 50%;
-}
+
 #logo{
     width: 25%;
     height: 15%;
@@ -63,6 +50,8 @@ img{
 }
 
 #loginBtnDiv{
+
+    width: 15%;
     height: 100%;
     padding: 0px;
     float: right;
@@ -171,7 +160,7 @@ ul {
 li {
     float: left;
     height: 100.5%;
-    width: 6%;
+    width: 8%;
    
 }
 
@@ -239,7 +228,7 @@ section{
     width: 100%;
     height: 50%;
     border: solid 4px white;
-    
+    margin: auto;
 }
 main section +section {
     border-top: none;
@@ -276,4 +265,42 @@ section:hover button{
 aside h2{
     font-family: 'Fontdiner Swanky', cursive; 
     text-align: center;
+       margin-bottom: 20%;
+}
+#logoLoginDiv{
+    width: 85%;
+    height: 25%;
+    border: solid 1px white;
+    border-radius: 100%;
+    background-color:#5bc0de ;
+    margin-left: 10%;
+}
+aside img{
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    margin-left:4%;
+}
+aside{
+    color:black;
+    background-color: #BDBDBD;
+    left: 0px;
+    top: 0px;
+    float: right;
+    width: 15%;
+    height: 100%;
+    border: solid 1px;
+}
+#loginInputDiv{
+    width: 100%;
+    margin-top:15%;
+    height: 25%;
+}
+#loginBtns{
+    width: 100%;
+    height: 20%;
+}
+
+#forgot-password{
+    margin-top: 10%;
 }

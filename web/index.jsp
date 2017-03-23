@@ -82,7 +82,7 @@
              <div id="titleDiv">BioLife<span><img src="img/logo5.gif" id="logo"><span></div>        
         </header>
           <!--Sections-->
-        <main  class="asideClosed">
+        <main>
             <a href=""><section id="sectionAnimals"class="text-center">
                  <button class="btn btn-warning">Animals</button>
                 </section></a>
@@ -98,15 +98,35 @@
                 <!------------------------------------------------------------LOGIN VIEW------------------------------------------------------->
                 <h2>Login</h2>
                 <div id="logoLoginDiv">
-                    <img src="img/login.png">   
+                    <img src="img/login2.png">   
                 </div>
                 
                 <span id="logInError"></span>
-                <label>Username</label>
-                <input class="form-control" type="text" required/>
-                <label>Password</label>
-                <input class="form-control" type="password" required/>
-                <button class="btn btn-info">LOGIN</button>
+                <div id="loginInputDiv">
+                    <div class="input-group inputSession">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <input id="email" type="email" class="form-control input-lg" name="email" value="" placeholder="Email Address">                                        
+                    </div>
+                    <div class="input-group inputSession">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                <input id="password" type="password" class="form-control input-lg" name="password" value="" placeholder="Password">                                        
+                    </div>
+                    <div class="input-group">
+                                      <div class="checkbox">
+                                        <label>
+                                          <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me
+                                        </label>
+                                      </div>
+                     </div>
+                </div>
+                <div id="loginBtns">
+                        <button class="btn btn-info btn-block btn-lg">LOGIN</button>
+                        <span id="forgot-password">
+                         <a href="#" >
+                            Forgot the password?
+                        </a>
+                         </span>
+                </div>
                 <!-------------------------------------------------------------END--------------------------------------------------------->
             </aside>
 
