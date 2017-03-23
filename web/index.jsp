@@ -31,6 +31,7 @@
           <script src="vendors/bootstrap/js/ui-bootstrap-tpls-2.3.1.js" type="text/javascript" xml:space="preserve"></script>
           <script src="vendors/angular/js/angular-cookies.js" type="text/javascript" xml:space="preserve"></script>
           <script src="vendors/angular/js/dirPagination.js" type="text/javascript" xml:space="preserve"></script>
+          
          <!--Model-->
           <!--Own code-->
         <script src="js/app.js" type="text/javascript" xml:space="preserve"></script>
@@ -39,9 +40,10 @@
     </head>
     <body>
         
-        <!--Header-->
-        <header id="header" class="asideClosed">
-           
+        
+        <div id="mainDiv" class="asideClosed">
+            <!--Header-->
+            <header id="header">
             
              <!----------------------------------------------------Icons header------------------------------------------------------->
             <div id="iconsHeaderDiv" >
@@ -51,7 +53,7 @@
                 <div id="searchDiv" class="col-sm-10">
                     <form  id="formSearch">
                         <div class="searchbox">
-                        <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                        <input type="search" placeholder="Search" name="search" class="form-control" onkeyup="buttonUp();" required>
                         </div>
                         <input type="submit" class="searchbox-submit" value="Search">
                         <span class="searchbox-icon"><span class="glyphicon glyphicon-search icon-size"></span>
@@ -88,18 +90,22 @@
                  <button  class="btn btn-success">Plants</button>
                 </section></a>
         </main>
+        </div>
         
-          
-        <!--aside-->
-        <aside id="logIn" class="closed">        
-            <!------------------------------------------------------------session------------------------------------------------------->
-            <img src="img/login.png">
-            <label>Username</label>
-            <input class="form-control" type="text" required/>
-            <label>Password</label>
-            <input class="form-control" type="password" required/>
-            <!-------------------------------------------------------------END--------------------------------------------------------->
-        </aside>
-      
+        <div>
+            <!--aside-->
+            <aside id="logIn" class="closed">        
+                <!------------------------------------------------------------LOGIN VIEW------------------------------------------------------->
+                <h2>Login</h2>
+                <img src="img/login.png">
+                <span id="logInError"></span>
+                <label>Username</label>
+                <input class="form-control" type="text" required/>
+                <label>Password</label>
+                <input class="form-control" type="password" required/>
+                <button class="btn btn-info">LOGIN</button>
+                <!-------------------------------------------------------------END--------------------------------------------------------->
+            </aside>
+        </div>
     </body>
 </html>

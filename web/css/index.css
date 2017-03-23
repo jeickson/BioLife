@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Fontdiner+Swanky');
+html, body { height: 100%; width: 100%; margin: 0; }
 html{
-    height: 100%;
-    width: 100%;
     overflow: hidden;
-}
-body{
-    height: 100%;
-    width: 100%;
 }
 header{
     float: left;
     height: 20%; 
-    background-color: #f1f1f1;  
+    background-color: #f1f1f1;
+    width: 100%;
 }
 aside{
     color: white;
@@ -19,24 +15,22 @@ aside{
     left: 0px;
     top: 0px;
     float: right;
-    height: 100%;
-}
-img{
-    width: 80%;
-    height: 150px;
-    border-radius: 50%;
-}
-.opened{
     width: 15%;
-}
-.closed{
-    width: 0%;
 }
 .asideOpened{
     width: 85%;
 }
 .asideClosed{
     width: 100%;
+}
+#mainDiv{
+    height: 100%;
+    float: left;
+}
+img{
+    width: 80%;
+    height: 150px;
+    border-radius: 50%;
 }
 #logo{
     width: 20%;
@@ -54,7 +48,6 @@ img{
     height:100%;
     margin-left: 0px;
     font-size: 1.5vw;
-
 }
 #titleDiv{
     position: absolute;
@@ -264,8 +257,6 @@ section:hover button{
     background-repeat: no-repeat;
     background-attachment:fixed;
     background-size: 100% 70%;
-
-    
 }
 
 #sectionPlants{
