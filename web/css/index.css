@@ -148,7 +148,7 @@ header{
     position: relative;
     top:65%;    
 }
-ul {
+ #mainNavBarDiv ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -157,14 +157,14 @@ ul {
     width: 100%;
 }
 
-li {
+ #mainNavBarDiv li {
     float: left;
     height: 100.5%;
     width: 8%;
    
 }
 
-li a, .dropbtn {
+ li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -174,7 +174,7 @@ li a, .dropbtn {
     font-size: 1vw;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+ #mainNavBarDiv li a:hover, .dropdown:hover .dropbtn {
     background-color: #f1f1f1;
     text-decoration: none;
     color:black;
@@ -303,4 +303,23 @@ aside{
 
 #forgot-password{
     margin-top: 10%;
+}
+
+
+@media (orientation:portrait ) {
+    #titleDiv{
+        display: none;
+    }
+    #iconsHeaderDiv{
+        width: 100%;    
+    }
+}
+
+@media ( max-height: 700px) {
+    #titleDiv{
+        display: none;
+    }
+    #iconsHeaderDiv{
+        width: 100%;    
+    }
 }
