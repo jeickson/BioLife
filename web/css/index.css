@@ -4,10 +4,12 @@ html{
     overflow: hidden;
 }
 header{
-    float: left;
+    float: right;
     height: 30%; 
     background-color: #f1f1f1;
     width: 100%;
+    z-index: 1;
+    clear: both;
 }
 
 .asideOpened{
@@ -22,8 +24,7 @@ header{
 }
 
 #logo{
-    width: 25%;
-    height: 15%;
+    width:100px;
     margin-left: 5%;
 }
 #iconsHeaderDiv{
@@ -41,11 +42,11 @@ header{
 #titleDiv{
     position: absolute;
     top:0%;
-    left:35%;    ;
+    left:35%; 
     font-family: 'Fontdiner Swanky', cursive;   
-    width: 30%;
-    font-size: 4.8vw;
-    
+    width: 600px;
+    font-size: 5em;
+
     
 }
 
@@ -61,6 +62,7 @@ header{
 #searchDiv{
     height: 100%;
     float: right;
+    width: 75%;
 }
 #formSearch{
     width: 100%;
@@ -144,9 +146,10 @@ header{
 #mainNavBarDiv{
     width: 100%;
     height: 35%;
+    float:right;
+    position:relative;
+    top:40%;
 
-    position: relative;
-    top:65%;    
 }
  #mainNavBarDiv ul {
     list-style-type: none;
@@ -155,23 +158,24 @@ header{
     background-color: #333;
     height: 100%;
     width: 100%;
+          
 }
 
  #mainNavBarDiv li {
-    float: left;
+    float: left;  
     height: 100.5%;
     width: 8%;
-   
+     z-index: 1;
 }
 
  li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding-top:20%;
     height: 100%;
     width: 100%;
-    font-size: 1vw;
+    font-size: 100%;
+
 }
 
  #mainNavBarDiv li a:hover, .dropdown:hover .dropbtn {
@@ -207,8 +211,7 @@ li.dropdown {
     display: block;
 }
 #homeIcon{
-   font-size:3vw;
-   padding-top:5%;
+
    background-color: #5bc0de;
 }
 #homeIcon:hover{
@@ -222,13 +225,16 @@ li.dropdown {
 main{
     width: 100%;
     height: 70%;
-    float: left;
+    float: right;
+    clear: both;
+    z-index: 1;
 }
 section{
     width: 100%;
     height: 50%;
     border: solid 4px white;
     margin: auto;
+    z-index: 1;
 }
 main section +section {
     border-top: none;
@@ -239,7 +245,7 @@ section button{
     width: 15%;
     height: 15%;
     opacity: 0.6;
-    z-index: 99;
+
     font-size: 1vw !important;
 
 }
@@ -306,20 +312,49 @@ aside{
 }
 
 
+@media (max-width:740px) and (orientation:portrait ) {
+    #titleDiv{
+        left:0px; 
+    }
+
+}
+
 @media (orientation:portrait ) {
     #titleDiv{
         display: none;
     }
     #iconsHeaderDiv{
         width: 100%;    
+        clear:both;
     }
-}
 
-@media ( max-height: 700px) {
+}
+@media ( max-height: 550px) {
     #titleDiv{
         display: none;
     }
     #iconsHeaderDiv{
         width: 100%;    
+        clear:both;
+    }
+}
+
+@media  (max-width:1200px) and (orientation:landscape ) {
+    #titleDiv{
+        left:0px; 
+
+    }
+}
+@media  (max-width:780px) and (orientation:landscape ) {
+    #titleDiv{
+        display: none;
+    }
+    #titleMenu{
+        display: block;
+        color: white;
+    }
+    #iconsHeaderDiv{
+        width: 100%;    
+        clear:both;
     }
 }

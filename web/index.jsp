@@ -47,7 +47,7 @@
             
              <!----------------------------------------------------Icons header------------------------------------------------------->
             <div id="iconsHeaderDiv" >
-                 <div class="col-sm-2" id="loginBtnDiv">
+                 <div  id="loginBtnDiv">
                     <button class="btn btn-info"  id="loginBtn" onclick="loginColumn()"><span class="glyphicon glyphicon-user icon-size"></span></button>
                 </div>
                 <div id="searchDiv" class="col-sm-10">
@@ -75,6 +75,7 @@
                       </div>
                     </li>
                    <li><a href="#news">Contact</a></li>  
+                   
                 </ul>
             </div>
                         
