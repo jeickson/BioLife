@@ -36,6 +36,8 @@
           <!--Own code-->
         <script src="js/app.js" type="text/javascript" xml:space="preserve"></script>
         <script src="js/control/index.js" type="text/javascript" xml:space="preserve"></script>
+        
+        <meta name="viewport" content="width=device-width" />
   
     </head>
     <body>
