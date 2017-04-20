@@ -14,7 +14,7 @@ $(document).ready(function () {
                     inputBox.focusout();
                     isOpen = false;
                 }
-            });  
+            });
              submitIcon.mouseup(function(){
                     return false;
                 });
@@ -28,7 +28,7 @@ $(document).ready(function () {
                     }
                 });
 });
-        
+
 function buttonUp(){
                 var inputVal = $('.searchbox-input').val();
                 inputVal = $.trim(inputVal).length;
@@ -40,21 +40,11 @@ function buttonUp(){
                 }
             }
 
-function loginColumn(){
-    
-    if($("#mainDiv").hasClass("asideClosed")){
-        $("#mainDiv").removeClass("asideClosed");
-        $("#mainDiv").addClass("asideOpened");
-    }
-    else{
-        $("#mainDiv").removeClass("asideOpened");
-        $("#mainDiv").addClass("asideClosed");
-    }
-}
+
 // Angular code
 (function(){
   var BioLifeApp =angular.module ("BioLifeApp", ["ng-currency", "ui.bootstrap", "ngCookies",'angularUtils.directives.dirPagination']);
-  
+
   BioLifeApp.directive("mainView", function (){
     return {
       restrict: 'E',
