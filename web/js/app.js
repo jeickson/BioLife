@@ -40,7 +40,18 @@ function buttonUp(){
                 }
             }
 
-
+function loginColumn (){
+  			if($("#mainHeader").hasClass("asideClosed")){
+          $("#mainHeader").removeClass("asideClosed");
+          $("#mainHeader").addClass("asideOpened");
+  				$scope.actionView = 'login';
+      }
+      else{
+          $("#mainHeader").removeClass("asideOpened");
+          $("#mainHeader").addClass("asideClosed");
+  				$scope.actionView = 'main';
+      }
+  		}
 // Angular code
 (function(){
   var BioLifeApp =angular.module ("BioLifeApp", ["ng-currency", "ui.bootstrap", "ngCookies",'angularUtils.directives.dirPagination']);

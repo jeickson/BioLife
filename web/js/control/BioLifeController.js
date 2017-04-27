@@ -9,20 +9,24 @@
 (function () {
 angular.module("BioLifeApp").controller("BioLifeController",['$scope', '$window', '$cookies','$filter',function ($scope, $window, $cookies,$filter){
       $scope.actionView='main';
-
-      this.loginColumn= function (){
-  			if($("#mainHeader").hasClass("asideClosed")){
-          $("#mainHeader").removeClass("asideClosed");
-          $("#mainHeader").addClass("asideOpened");
-  				$scope.actionView = 'login';
-      }
-      else{
-          $("#mainHeader").removeClass("asideOpened");
-          $("#mainHeader").addClass("asideClosed");
-  				$scope.actionView = 'main';
-      }
-  		}
-
+      $scope.loginView=false;
+      
+        
+       $scope.loginOpenClose=function(){
+            
+            if(!$scope.loginView){
+                $scope.loginView=true;
+                $('#divFullContent').addClass('col-lg-9');
+                $('#logo').hide();
+                $('#iconsHeaderDiv').removeClass('col-lg-4');
+                
+            }else{
+                $scope.loginView=false;
+                $('#divFullContent').removeClass('col-lg-9');
+                 $('#logo').show();
+                 $('#iconsHeaderDiv').addClass('col-lg-4');
+            }
+        }
 }]);
 
 })();

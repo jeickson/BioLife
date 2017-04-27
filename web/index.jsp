@@ -101,7 +101,7 @@
                 <!------------------------------------------------------------LOGIN VIEW------------------------------------------------------->
                 <h2>Login</h2>
                 <div id="logoLoginDiv">
-                    <img src="img/login2.png">   
+                    <img src="img/login2.png" class="img-responsive">   
                 </div>
                 
                 <span id="logInError"></span>
