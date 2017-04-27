@@ -16,13 +16,13 @@ angular.module("BioLifeApp").controller("BioLifeController",['$scope', '$window'
             
             if(!$scope.loginView){
                 $scope.loginView=true;
-                $('#divFullContent').addClass('col-lg-9');
+                $('#divFullContent').addClass('col-sm-9 col-md-9 col-lg-9');
                 $('#logo').hide();
                 $('#iconsHeaderDiv').removeClass('col-lg-4');
                 
             }else{
                 $scope.loginView=false;
-                $('#divFullContent').removeClass('col-lg-9');
+                $('#divFullContent').removeClass('col-sm-9 col-md-9 col-lg-9');
                  $('#logo').show();
                  $('#iconsHeaderDiv').addClass('col-lg-4');
             }

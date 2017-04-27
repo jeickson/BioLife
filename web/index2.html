@@ -46,7 +46,7 @@ and open the template in the editor.
                         <div class="col-xs-12  col-lg-4 "></div>
 
                         <div class="col-xs-12  col-lg-4  text-center ">
-                            <div id="titleDiv">BioLife<span><img src="img/logo5.gif" id="logo"><span></div>
+                            <div id="titleDiv">BioLife<span><span></div>
                         </div>
 
                         <div  id="iconsHeaderDiv" class="col-xs-12 col-lg-4 ">
@@ -90,11 +90,12 @@ and open the template in the editor.
                 <main-view ng-show="actionView=='main'"></main-view>
                 </div>
                 <!--aside-->
-                <aside id="logIn" class=" col-xs-12 col-lg-3 well" ng-show="loginView">        
+                <aside id="logIn" class=" col-xs-12 col-md-3 col-sm-3 col-lg-3 well" ng-show="loginView">        
                 <!------------------------------------------------------------LOGIN VIEW------------------------------------------------------->
+                <button class="btn btn-warning" id='btnLoginInside' ng-click="loginOpenClose()"><span class="glyphicon glyphicon-circle-arrow-right icon-size"></span></button>
                 <h2>Login</h2>
                 <div id="logoLoginDiv">
-                    <img src="img/login2.png">   
+                    <img src="img/login3.png">   
                 </div>
                 
                 <span id="logInError"></span>
@@ -121,7 +122,12 @@ and open the template in the editor.
                          <a href="#" >
                             Forgot the password?
                         </a>
-                         </span>
+                        </span>
+                        <span id="registerLink ">
+                         <a href="#" >
+                            Join us now!
+                        </a>
+                        </span>
                 </div>
                 <!-------------------------------------------------------------END--------------------------------------------------------->
             </aside>
