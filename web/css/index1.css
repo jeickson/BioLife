@@ -205,7 +205,7 @@ header .row+.row{
 }
 #sectionPlants button,#sectionAnimals button{
     position: absolute;
-    font-size: 1.6em;
+    font-size: 1.8em;
     color: black;
     z-index: 99;
     top: 45%;
@@ -213,6 +213,7 @@ header .row+.row{
     width: 35%;
     height: 15%;
     opacity: 0.6;
+    font-family: 'Shrikhand', cursive;
 }
 
 #sectionPlants:hover img,#sectionAnimals:hover img{
