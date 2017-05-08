@@ -31,7 +31,8 @@ and open the template in the editor.
           <script src="vendors/bootstrap/js/ui-bootstrap-tpls-2.3.1.js" type="text/javascript" xml:space="preserve"></script>
           <script src="vendors/angular/js/angular-cookies.js" type="text/javascript" xml:space="preserve"></script>
           <script src="vendors/angular/js/dirPagination.js" type="text/javascript" xml:space="preserve"></script>
-
+          <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
          <!--Model-->
           <!--Own code-->
         <script src="js/app.js" type="text/javascript" xml:space="preserve"></script>
@@ -78,7 +79,7 @@ and open the template in the editor.
                                     <a href="#">Link 3</a>
                                   </div>
                                 </li>
-                               <li><a href="">Contact</a></li>
+                               <li><a ng-click="actionView='contact'">Contact</a></li>
 
                             </ul>
                         </nav>
@@ -88,6 +89,8 @@ and open the template in the editor.
             
                 <!--View Main-->
                 <main-view ng-show="actionView=='main'"></main-view>
+                <!-- View Contact-->
+                <contact-view ng-show="actionView=='contact'"></contact-view>
                 </div>
                 <!--aside-->
                 <aside id="logIn" class=" col-xs-12 col-md-3 col-sm-3 col-lg-3 well" ng-show="loginView">        

@@ -273,8 +273,22 @@ aside h2{
     font-size: 1.8em;
     display:none;
 }
+/*Contact */
+.jumbotron {
+background: #5bc0de !important;
+color: #FFF !important;
+border-radius: 0px;
+}
+.jumbotron-sm { padding-top: 24px;
+padding-bottom: 24px; }
+.jumbotron small {
+color: #FFF !important;
+}
+.h1 small {
+font-size: 24px;
+}
 
-
+/*Media query Responsive*/
 @media  (max-width:1305px)  {
     #titleDiv{
         font-size: 7em;

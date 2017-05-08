@@ -66,4 +66,14 @@ function loginColumn (){
       controllerAs: 'mainView'
     };
   });
+   BioLifeApp.directive("contactView", function (){
+    return {
+      restrict: 'E',
+      templateUrl:"view/templates/contact-view.html",
+      controller:function(){
+
+      },
+      controllerAs: 'contactView'
+    };
+  });
 })();
