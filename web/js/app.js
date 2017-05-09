@@ -66,6 +66,7 @@ function loginColumn (){
       controllerAs: 'mainView'
     };
   });
+  
    BioLifeApp.directive("contactView", function (){
     return {
       restrict: 'E',
@@ -74,6 +75,17 @@ function loginColumn (){
 
       },
       controllerAs: 'contactView'
+    };
+  });
+  
+  BioLifeApp.directive("articlesView", function (){
+    return {
+      restrict: 'E',
+      templateUrl:"view/templates/articles-view.html",
+      controller:function(){
+
+      },
+      controllerAs: 'articlesView'
     };
   });
 })();
