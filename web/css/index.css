@@ -14,9 +14,11 @@ header{
 
 .asideOpened{
     width: 85%;
+
 }
 .asideClosed{
     width: 100%;
+
 }
 #mainDiv{
     height: 100%;
@@ -213,8 +215,9 @@ li.dropdown {
 }
 #homeIcon{
     margin: 0px;
-   padding: 0px;
+   padding: 5px;
    background-color: #5bc0de;
+   font-size: 3vw;
 }
 #homeIcon:hover{
     background-color: #5bc0de;
@@ -322,6 +325,10 @@ aside{
         width: 60%;    
         clear:both;
     }
+    #mainNavBarDiv {
+        /*overflow: hidden
+        height: auto;*/
+    }
 }
 
 @media (orientation:portrait ) {
@@ -334,7 +341,7 @@ aside{
     }
 
 }
-@media ( max-height: 550px) {
+@media ( max-height: 500px) {
     #titleDiv{
         display: none;
     }
@@ -353,6 +360,9 @@ aside{
     }
     li a, .dropbtn{
         font-size: 0.6vw;
+    }
+    #homeIcon{
+        font-size: 2vw;
     }
     
 }

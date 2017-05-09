@@ -7,6 +7,12 @@ html, body { height: 100%; width: 100%; margin: 0;}
 
     font-size: 7em;
 }
+.verde{
+    color: #2e8b18;
+}
+.azul{
+    color: #5bc0de;
+}
 #logo{
     width: 100px;
 }
@@ -119,6 +125,9 @@ html, body { height: 100%; width: 100%; margin: 0;}
 
 
 }
+#homeLi{
+    width: 100px;
+}
  #mainNavBarDiv ul {
     list-style-type: none;
     margin: 0;
@@ -132,7 +141,7 @@ html, body { height: 100%; width: 100%; margin: 0;}
  #mainNavBarDiv li {
     float: left;
     height: 100.5%;
-    width: 110px;
+
     z-index: 1;
      height:80px;
 }
@@ -231,11 +240,12 @@ box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.45);
 }
 /*LOGIN*/
 #logIn{
-    position: absolute;
+    position: fixed;
     top: 0px;
     right: 0px;
     z-index: 99;
-    height: 1080px;
+    height: 100%;
+    overflow: scroll;
   
 }
 #logoLoginDiv{
@@ -255,12 +265,12 @@ aside h2{
 }
 #loginInputDiv{
 
-    margin-top:20%;
+    margin-top:20px;
 
 }
 
 #loginBtns{
-     margin-top: 10%;
+     margin-top: 20px;
 }
 #loginBtns span{
     display: block;
@@ -300,23 +310,17 @@ font-size: 24px;
     #imgAnimal,#imgPlant{
       height: 400px;
     }
-    #logIn{
-        height: 870px; 
-    }   
+
 
 }
 @media  (max-width:1200px)  {
     #sectionPlants img{
          margin-top: 20px;
     }
-    #logIn{
-        height: 1300px; 
-    }
+
 }
 @media  (max-width:767px)  {
-        #logIn{
-            height: 1450px; 
-        }
+
           #btnLoginInside{
             display:block;
         }
@@ -372,9 +376,7 @@ font-size: 24px;
     .dropdown-content {
         min-width: 100%;
     }
-    #logIn{
-        height: 1000px; 
-    }
+    
      aside h2{
             font-size: 4em;
     }
