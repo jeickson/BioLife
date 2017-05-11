@@ -86,35 +86,35 @@ and open the template in the editor.
                     </div>
 
                 </header>
-            
+
                 <!--View Main-->
                 <main-view ng-show="actionView=='main'"></main-view>
-                
+
                 <!-- View Contact-->
                 <contact-view ng-show="actionView=='contact'"></contact-view>
-                
+
                 <!-- Articles View-->
                 <articles-view ng-show="actionView=='articles'"></articles-view>
-                
+
                 </div>
                 <!--aside-->
-                <aside id="logIn" class=" col-xs-12 col-md-3 col-sm-3 col-lg-3 well" ng-show="loginView">        
+                <aside id="logIn" class=" col-xs-12 col-md-3 col-sm-3 col-lg-3 well" ng-show="loginView">
                 <!------------------------------------------------------------LOGIN VIEW------------------------------------------------------->
                 <button class="btn btn-warning" id='btnLoginInside' ng-click="loginOpenClose()"><span class="glyphicon glyphicon-circle-arrow-right icon-size"></span></button>
                 <h2>Login</h2>
                 <div id="logoLoginDiv">
-                    <img src="img/login3.png">   
+                    <img src="img/login3.png">
                 </div>
-                
+
                 <span id="logInError"></span>
                 <div id="loginInputDiv">
                     <div class="input-group inputSession">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                        <input id="email" type="email" class="form-control input-lg" name="email" value="" placeholder="Email Address">                                        
+                        <input id="email" type="email" class="form-control input-lg" name="email" value="" placeholder="Email Address">
                     </div>
                     <div class="input-group inputSession">
                         <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                        <input id="password" type="password" class="form-control input-lg" name="password" value="" placeholder="Password">                                        
+                        <input id="password" type="password" class="form-control input-lg" name="password" value="" placeholder="Password">
                     </div>
                     <div class="input-group">
                         <div class="checkbox">
@@ -135,10 +135,10 @@ and open the template in the editor.
                          <a href="#" data-toggle="modal" data-target="#myModal" >
                             Join us now!
                         </a>
-                            
+
                         </span>
                 </div>
-                
+
                 <!-------------------------------------------------------------END--------------------------------------------------------->
             </aside>
                 <!-- Modal -->
